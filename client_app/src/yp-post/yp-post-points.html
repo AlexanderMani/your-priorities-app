@@ -606,6 +606,10 @@
           this.set('upPoints', null);
           this.set('downPoints', null);
           this.set('latestPointCreatedAt', null);
+          this.set("textValueUp", "");
+          this.set("textValueDown", "");
+          this.set("textValueMobileUpOrDown", "");
+
           if (newPost) {
             if (this.host) {
               this.$.ajax.url = this.host+'/api/posts/' + newPost.id + '/points';
